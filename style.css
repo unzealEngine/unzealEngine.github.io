@@ -47,18 +47,55 @@ a.headerItem:hover
 
 }
 
-p 
+p
 {
-	font-size: 18px; 
+	font-size: 18px;
+}
+
+p.home
+{
 	width: 520px;
 }
 
 img#logo
 {
+	z-index: -1;
 	width:50%; 
-	position:fixed; 
+	position:absolute; 
 	right:100px; 
 	top:200px;
+}
+
+img#gexMenu
+{
+	z-index: -1;
+	width: 25%;
+	position: absolute;
+	top: 200px;
+	right: 10%;
+}
+
+div#content
+{
+	padding-left: 10px;
+}
+
+div#footer
+{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: #25C43D;
+	position: static;
+	bottom: 0px;
+	background-image: url(assets/footerbg.png);
+	background-position: right top;
+	background-repeat: repeat-y;
+}
+
+a.footerLink
+{
+	color: white;
+	font-weight: bold;
 }
 
 table, th, td
@@ -92,6 +129,23 @@ table
 		width: 100%;
 	}
 	
+	img#gexMenu
+	{
+		right: 5%;
+	}
+	
+}
+
+@media screen and (max-width: 1150px)
+{
+	img#gexMenu
+	{
+		margin-top: 20px;
+		margin-left: 10%;
+		position: static;
+		text-align: center; 
+		width: 40%;
+	}
 }
 
 @media screen and (max-width: 850px) 
@@ -113,6 +167,11 @@ table
 		background-image: none;
 		display: flex;
 		flex-direction: column;
+	}
+	
+	div#footer
+	{
+		background-image: none;
 	}
 	
 	table 
@@ -151,5 +210,10 @@ table
 	#header
 	{
 		flex-direction: column;
+	}
+	
+	div#footer
+	{
+		font-size: 80%;
 	}
 }
