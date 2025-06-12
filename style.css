@@ -88,6 +88,7 @@ div#content
 
 div#footer
 {
+	width: 100%;
 	padding-left: 10px;
 	padding-bottom: 10px;
 	background-color: #25C43D;
@@ -193,6 +194,7 @@ div#contactForm
 	{
 		display: block;
 	}
+	
 	div#buttons
 	{
 		margin-left: auto;
@@ -201,11 +203,24 @@ div#contactForm
 		display: flex;
 	}
 
+	p.home
+	{
+		width: 100%;
+		text-align: center;
+	}
+
 	#header
 	{
 		background-image: none;
 		display: flex;
 		flex-direction: column;
+	}
+	
+	div#content
+	{
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	div#footer
@@ -232,14 +247,7 @@ div#contactForm
 }
 
 @media screen and (max-width: 650px) 
-{
-	div#content
-	{
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	
+{	
 	table 
 	{
 		width: 100%;
