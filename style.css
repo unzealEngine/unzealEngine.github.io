@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap');
+
+body
+{
+	background-color: black;
+	color: white;
+	font-family: Mulish;
+}
+
+#header
+{
+	background-image: url(assets/bannerbg.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	position: sticky;
+	top: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	background-color: #25C43D;
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+
+div#buttons
+{
+	display: flex;
+	color: black;
+}
+
+a.headerItem
+{
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	text-align: center;
+	align-self: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+a.headerItem:hover
+{
+	text-decoration: underline;
+
+}
+
+p 
+{
+	font-size: 18px; 
+	width: 520px;
+}
+
+img#logo
+{
+	width:50%; 
+	position:fixed; 
+	right:100px; 
+	top:200px;
+}
+
+@media screen and (max-width: 1300px) 
+{
+	p
+	{
+		width: 100%;
+	}
+	
+	img#logo
+	{
+		position: static;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 850px) 
+{
+	div#bannerlogo
+	{
+		display: block;
+	}
+	div#buttons
+	{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		display: flex;
+	}
+
+	#header
+	{
+		background-image: none;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 650px) 
+{
+	div#content
+	{
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	div#buttons 
+	{
+		display: block;
+	}
+	
+	a.headerItem
+	{
+		display: block;
+	}
+	
+	#header
+	{
+		flex-direction: column;
+	}
+}
