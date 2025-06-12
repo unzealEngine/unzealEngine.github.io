@@ -61,6 +61,24 @@ img#logo
 	top:200px;
 }
 
+table, th, td
+{
+	border: 2px solid;
+	border-collapse: collapse;
+}
+
+th
+{
+	color: black;
+	border-color: #25C43D;
+	background-color: #25C43D;
+}
+
+table 
+{
+	width: 750px;
+}
+
 @media screen and (max-width: 1300px) 
 {
 	p
@@ -73,6 +91,7 @@ img#logo
 		position: static;
 		width: 100%;
 	}
+	
 }
 
 @media screen and (max-width: 850px) 
@@ -95,6 +114,12 @@ img#logo
 		display: flex;
 		flex-direction: column;
 	}
+	
+	table 
+	{
+		width: 90%;
+	}
+	
 }
 
 @media screen and (max-width: 650px) 
@@ -104,6 +129,13 @@ img#logo
 		text-align: center;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	
+	table 
+	{
+		width: 100%;
+		padding: none;
+		text-align: center;
 	}
 	
 	div#buttons 
